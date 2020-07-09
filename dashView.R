@@ -11,23 +11,45 @@ dashView <- function(){
             # Include our custom CSS
             includeCSS("./www/styles.css")
           ),
+          tags$head(
+            # Include our custom CSS
+            includeCSS("./www/styles.css")
+          ),
           fluidRow(
             box(
-              verbatimTextOutput("dateText"),
-              width = 12
+              dataTableOutput("Produtos"),
+              width = 6
+            ),
+            box(
+              sliderInput("qtd", "Quantidade",
+                          min = 0, max = 24, value = 1
+              ),
+              submitButton("saveButton", icon("save"))
             )
           ),
           fluidRow(
             box(
-              verbatimTextOutput("usuario"),
-              width = 12
-            )
-          ),
-          fluidRow(
-            box(
-              verbatimTextOutput("email"),
+              dataTableOutput("Selecionado"),
               width = 12
             )
           )
+          # fluidRow(
+          #   box(
+          #     verbatimTextOutput("dateText"),
+          #     width = 12
+          #   )
+          # ),
+          # fluidRow(
+          #   box(
+          #     verbatimTextOutput("usuario"),
+          #     width = 12
+          #   )
+          # ),
+          # fluidRow(
+          #   box(
+          #     verbatimTextOutput("email"),
+          #     width = 12
+          #   )
+          # )
   )
 }

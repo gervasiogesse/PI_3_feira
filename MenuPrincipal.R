@@ -13,11 +13,11 @@ MenuPrincipal <- function() {
     menuItem("Menu", tabName = "Principal", icon = icon("th")),
     
     #------------------------Menu Logout--------------------------------
-    menuItem("LogOut", tabName = "logout", icon = icon("sign-out-alt")),
+    menuItem("LogOut", tabName = "logout", icon = icon("sign-out-alt"))
     #------------------------Filtros Menu principal-------------------------
     
-    conditionalPanel(
-      condition = "input.tabs == 'Principal'",
-      dataInput('date')
-    )
+    # conditionalPanel(
+    #   condition = "input.tabs == 'Principal'",
+    #   dataInput('date')
+    # )
 )}

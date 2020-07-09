@@ -23,3 +23,10 @@ dataInput <- function(id){
   )
 }
 
+# Dev
+email <- "imenezbg@gmail.com"
+
+semanaAtual <- function(){
+  strftime(Sys.Date(), format = "%V")
+}
+

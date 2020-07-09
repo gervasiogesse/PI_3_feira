@@ -1,5 +1,5 @@
 logoutController <- function(input, output, session){
-  output$user_out <- renderPrint({
+      output$user_out <- renderPrint({
     session$userData$user()
   })
   

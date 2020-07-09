@@ -1,0 +1,3 @@
+"prd","img","valor","Disponivel","emailId","semana","qtd","emailIdCliente"
+"alface","<img src=./img/alface.png width=50%>",2,TRUE,"gervasio.81@gmail.com",28,4,"imenezbg@gmail.com"
+"tomate","<img src=./img/tomate.png width=50%>",3,TRUE,"gervasio.81@gmail.com",28,1,"imenezbg@gmail.com"

@@ -12,7 +12,7 @@ secure_ui(
 # Inicia a página do dashboard adiciona o logo o link e o titulo
 # que aparece na barra de endereço
 dashboardPage(
-  dashboardHeader(title = tags$img(src='logo.jpg'),
+  dashboardHeader(title = tags$img(src='./img/LogotipoPI3_v2.png'),
                   dropdownMenuOutput("notificationMenu")
   ),
   title = "PI3",
